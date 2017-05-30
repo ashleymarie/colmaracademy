@@ -56,6 +56,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  color: #323232;
 }
 
 body {
@@ -66,14 +67,17 @@ ul {
   text-align: right;
 }
 
-.container {
-  margin: 0 auto;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Header Area */
 
-.header {
-  padding: 0 24px;
+header {
+  width: 100%;
+  align-items: center;
   height: 4em;
   position: fixed;
   z-index: 99;
@@ -83,8 +87,40 @@ ul {
   background-color: white;
 }
 
-.header li {
+header img {
+  height: 3.125rem;
+  padding-left: 1.5rem;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+.dark-gray {
+  color: #323;
+  font-weight: 700;
+}
+
+.light-gray {
+  color: #9a9;
+  font-weight: 300;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+  padding-right: 0.875rem;
+}
+
+nav span {
   display: inline-block;
-  padding-right: 1em;
+  padding: 1.25rem 0.5rem;
   justify-content: center;
+}
+
+nav a {
+  color: #323232;
+  text-decoration: none;
 }
