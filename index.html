@@ -44,7 +44,7 @@
       </div>
       <div class="column-small">
         <div class="post">
-          <img src="./resources/images/information-orientation.jpg" alt="students walking">
+          <img class="desktop-image" src="./resources/images/information-orientation.jpg" alt="students walking">
           <img class="mobile-image" src="./resources/images/information-orientation-mobile.jpg" alt="students walking">
           <div>
             <h2>Orientation date</h2>
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="post">
-          <img src="./resources/images/information-campus.jpg" alt="cafe with lights">
+          <img class="desktop-image" src="./resources/images/information-campus.jpg" alt="cafe with lights">
           <img class="mobile-image" src="./resources/images/information-campus-mobile.jpg" alt="cafe with lights">
           <div>
             <h2>Our campus</h2>
@@ -62,7 +62,7 @@
           </div>
         </div>
         <div class="post last">
-          <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sacks">
+          <img class="desktop-image" src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sacks">
           <img class="mobile-image" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sacks">
           <div>
             <h2>Our guest lecture</h2>
@@ -75,44 +75,57 @@
 
     <!-- Courses Content -->
     <div class="courses">
+      <h1>Start learning</h1>
       <div id="row-1">
         <div class="course">
           <img src="./resources/images/course-software.jpg" alt="desktop computers">
-          <h3>Software engineering</h3>
-          <span class="post-content-caps">COURSES</span>
-          <span class="post-content">Web Development, Mobile Development, iOT, APIs</span>
+          <div class="course-text">
+            <h2>Software engineering</h2>
+            <p class="post-content-caps">Courses</p>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
         </div>
         <div class="course">
           <img src="./resources/images/course-computer-art.jpg" alt="mobile phone">
-          <h3>Computer art</h3>
-          <span class="post-content-caps">COURSES</span>
-          <span class="post-content">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</span>
+          <div class="course-text">
+            <h2>Computer art</h2>
+            <p class="post-content-caps">Courses</p>
+            <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          </div>
         </div>
         <div class="course">
           <img src="./resources/images/course-design.jpg" alt="film camera">
-          <h3>Design</h3>
-          <span class="post-content-caps">COURSES</span>
-          <span class="post-content">User Experience Design, User Research, Visual Design</span>
+          <div class="course-text">
+            <h2>Design</h2>
+            <p class="post-content-caps">Courses</p>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
         </div>
       </div>
       <div id="row-2">
         <div class="course">
           <img src="./resources/images/course-data.jpg" alt="laptop on desk">
-          <h3>Data</h3>
-          <span class="post-content-caps">COURSES</span>
-          <span class="post-content">Data Science, Big Data, SQL, Data Visualization</span>
+          <div class="course-text">
+            <h2>Data</h2>
+            <p class="post-content-caps">Courses</p>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </div>
         </div>
         <div class="course">
           <img src="./resources/images/course-business.jpg" alt="chess pieces">
-          <h3>Business</h3>
-          <span class="post-content-caps">COURSES</span>
-          <span class="post-content">Product Development, Business Development, Startup</span>
+          <div class="course-text">
+            <h2>Business</h2>
+            <p class="post-content-caps">Courses</p>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
         </div>
         <div class="course">
           <img src="./resources/images/course-marketing.jpg" alt="apple watch">
-          <h3>Marketing</h3>
-          <span class="post-content-caps">COURSES</span>
-          <span class="post-content">Analytics, Content Marketing, Mobile Marketing</span>
+          <div class="course-text">
+            <h2>Marketing</h2>
+            <p class="post-content-caps">Courses</p>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
         </div>
       </div>
     </div>
@@ -120,23 +133,25 @@
     <!-- Thesis Content Area -->
     <div class="thesis-content">
       <h1>Thesis exhibit</h1>
-      <div class="column-large">
-        <video>
-          <source src="./resources/video/thesis.mp4">
-        </video>
-        <h2>Reimagine urban</h2>
-        <span class="post-content">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span>
-      </div>
-      <div class="column-small">
-        <div class="post-highlight">
-          <img src="./resources/images/thesis-fisma.jpg" alt="overhead sketching">
-          <h3>Fisma: Design and</h3>
-          <span class="post-content">Designer showcase of new prototype product</span>
+      <div class="row">
+        <div class="column-large">
+          <video>
+            <source src="./resources/video/thesis.mp4">
+          </video>
+          <h2>Reimagine urban</h2>
+          <span class="post-content">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span>
         </div>
-        <div class="post">
-          <img src="./resources/images/thesis-now-and-then.jpg" alt="Empire State Building">
-          <h3>Now and then</h3>
-          <span class="post-content">Research study about New York</span>
+        <div class="column-small">
+          <div class="post-highlight">
+            <img src="./resources/images/thesis-fisma.jpg" alt="overhead sketching">
+            <h3>Fisma: Design and</h3>
+            <span class="post-content">Designer showcase of new prototype product</span>
+          </div>
+          <div class="post">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="Empire State Building">
+            <h3>Now and then</h3>
+            <span class="post-content">Research study about New York</span>
+          </div>
         </div>
       </div>
     </div>

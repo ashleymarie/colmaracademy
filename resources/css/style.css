@@ -86,7 +86,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-img {
+img, video {
   max-width: 100%;
 }
 
@@ -200,7 +200,7 @@ nav a {
 }
 
 .author {
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .post {
@@ -239,30 +239,88 @@ div.post {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 1500px) {
+.desktop-image {
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
   img.mobile-image {
     display: none;
   }
-}
-
-@media only screen and (min-width: 500px) {
-  img.mobile-image {
-    display: none;
+  img.desktop-image {
+    display: block;
   }
 }
 
 /* Courses */
 
-.courses {
-  width: 100%;
-  display: block;
+.courses, .thesis-content h1 {
+  text-align: center;
+  margin: 2rem 0;
 }
 
-#row-1, #row-2 {
-  display: flex;
-  flex-direction: row;
+.courses {
+  width: 80%;
+  display: block;
+  align-items: center;
+  border-bottom: 1px #ccc solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 720px) {
+  #row-1, #row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .course {
   background-color: #fafafa;
+  margin: 1rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 720px) {
+  .course {
+    width: 33%;
+  }
+}
+
+.course-text {
+  margin: 1rem;
+}
+
+.course h2 {
+  margin-top: 1rem;
+}
+
+.post-content-caps {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.course img, .course-text p {
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
+  .course img, .course-text p {
+    display: block;
+  }
+}
+
+/* Thesis Content */
+
+.row {
+  display: flex;
+}
+
+/* footer */
+
+footer {
+  margin-top: 32px;
+  border-top: 1px solid #ccc;
+  padding: 24px;
 }
