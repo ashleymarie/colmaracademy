@@ -55,6 +55,11 @@ html, body {
   background-color: white;
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  padding-top: 4em;
 }
 
 ul {
@@ -68,12 +73,18 @@ ul {
 /* Header Area */
 
 .header {
-  font-family: "Open Sans", sans-serif;
   padding: 0 24px;
   height: 4em;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
 }
 
 .header li {
   display: inline-block;
   padding-right: 1em;
+  justify-content: center;
 }
