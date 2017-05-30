@@ -55,22 +55,39 @@ html, body {
   background-color: white;
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   color: #323232;
-}
-
-body {
-  padding-top: 4em;
 }
 
 ul {
   text-align: right;
 }
 
+div {
+  display: block;
+}
+
 .flex-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Header Area */
@@ -85,6 +102,7 @@ header {
   left: 0;
   right: 0;
   background-color: white;
+  border-bottom: 1px #9a9a9a solid;
 }
 
 header img {
@@ -123,4 +141,15 @@ nav span {
 nav a {
   color: #323232;
   text-decoration: none;
+}
+
+/* Main Content Area */
+
+.main {
+  padding-top: 6rem;
+  margin: auto;
+}
+
+.main img {
+  margin: 2rem 2.5rem 2rem 1.5rem;
 }
