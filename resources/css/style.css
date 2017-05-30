@@ -58,6 +58,7 @@ html, body {
   width: 100%;
   font-family: "Open Sans", sans-serif;
   color: #323232;
+  line-height: 1.4;
 }
 
 ul {
@@ -76,15 +77,13 @@ div {
 
 h1 {
   font-family: "Montserrat";
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.25;
+  margin-bottom: 2rem;
 }
 
 h2 {
-  font-family: "Montserrat";
   font-size: 1.5rem;
-  font-weight: 400;
 }
 
 img {
@@ -93,11 +92,16 @@ img {
 
 .column-large {
   width: 60%;
-  margin-right: 4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .column-small {
-  max-width: 26.25rem;
+  width: 40%;
+}
+
+img.large {
+  margin: 1rem 0 2rem 0;
 }
 
 /* Header Area */
@@ -153,32 +157,22 @@ nav a {
   text-decoration: none;
 }
 
-/* Main Content Area */
+/* Banner Area */
 
 .main {
-  padding-top: 6rem;
+  padding-top: 5rem;
   margin: auto;
   display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   border-bottom: 1px #e1e1e1 solid;
 }
 
-.main img {
-  margin: 0 0 2rem 1.5rem;
-}
-
-.main h1 {
-  margin-bottom: 2rem;
-}
-
-.main h2 {
-  line-height: 1.5;
+.column-small .invite-text {
+  margin: 1rem;
 }
 
 .start-here  {
-  width: 100%;
+  width: 80%;
   background-color: #F7BA1E;
   border-radius: 4px;
   color: #fff;
@@ -189,4 +183,86 @@ nav a {
   text-transform: uppercase;
   border: none;
   margin-top: 2rem;
+}
+
+/* Information Area */
+
+.information {
+  background-color: #f1f1f1;
+  display: inline-flex;
+  padding-top: 1rem;
+}
+
+.post-content {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  display: block;
+}
+
+.author {
+  padding-top: 2rem;
+}
+
+.post {
+  border-bottom: 1px #ccc solid;
+  width: 100%;
+  display: flex;
+}
+
+.post img {
+  margin: 1rem;
+  height: 100%;
+  width: 35%;
+  float: left;
+}
+
+.post h2 {
+  color: #F7BA1E;
+  font-weight: bold;
+}
+
+div.post {
+  align-items: center;
+}
+
+.post.last {
+  border-bottom: none;
+}
+
+.post p {
+  margin-top: 0.5rem;
+}
+
+.read-more {
+  margin-top: 1rem;
+  display: block;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1500px) {
+  img.mobile-image {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  img.mobile-image {
+    display: none;
+  }
+}
+
+/* Courses */
+
+.courses {
+  width: 100%;
+  display: block;
+}
+
+#row-1, #row-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.course {
+  background-color: #fafafa;
 }
